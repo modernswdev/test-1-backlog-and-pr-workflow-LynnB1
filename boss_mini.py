@@ -1,17 +1,12 @@
 # boss_mini.py
 # A tiny combat script for the GitHub Workflow Exam.
 
-# SECURITY RISK: Hardcoded secret creates a backdoor vulnerability.
-# FIX: Remove SECRET_CODE and the cheat logic.
-# SECRET_CODE = "ADMIN_ACCESS_2025"
-
 p_hp = 50
 b_hp = 50
 MAX_HP = 50
 
 def attack():
     global b_hp
-    # BUG FIX: Boss HP was not decreasing.
     b_hp -= 10
     if b_hp < 0:
         b_hp = 0
@@ -19,7 +14,6 @@ def attack():
 
 def heal():
     global p_hp
-    # BUG FIX: Add guardrails to prevent overheal and healing when dead.
     if p_hp <= 0:
         print("You cannot heal when defeated.")
         return
@@ -37,8 +31,9 @@ while p_hp > 0 and b_hp > 0:
         attack()
     elif choice == 'h':
         heal()
+    else:
+        print("Invalid choice! Please choose 'a' or 'h'.")
 
-    # WIN CONDITION FIX
     if b_hp <= 0:
         print("Victory!")
         break

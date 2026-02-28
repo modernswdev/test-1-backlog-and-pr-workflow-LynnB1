@@ -7,6 +7,9 @@
 # BONUS FIX: Remove SECRET_CODE entirely and delete the cheat path that compares input to it.
 SECRET_CODE = "ADMIN_ACCESS_2025"
 
+SECRET_CODE = "ADMIN_ACCESS_2025"
+
+
 p_hp = 50
 b_hp = 50
 MAX_HP = 50

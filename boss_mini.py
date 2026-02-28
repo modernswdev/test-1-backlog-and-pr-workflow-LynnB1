@@ -1,6 +1,11 @@
 # boss_mini.py
 # A tiny combat script for the GitHub Workflow Exam.
 
+
+
+SECRET_CODE = "ADMIN_ACCESS_2025"
+
+
 p_hp = 50
 b_hp = 50
 MAX_HP = 50
